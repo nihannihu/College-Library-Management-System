@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library - Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>College Library Management System</h1>
+    <nav>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <main class="center">
+    <div class="auth-card">
+      <h1>📝 Create your account</h1>
+      <div class="mt-2">
+        <input id="regUsername" class="w-full" placeholder="👤 Username">
+      </div>
+      <div class="mt-2">
+        <input id="regEmail" type="email" class="w-full" placeholder="📧 Email Address">
+      </div>
+      <div class="mt-2">
+        <input id="regPassword" type="password" class="w-full" placeholder="🔒 Password">
+      </div>
+      <div class="mt-3">
+        <button id="registerBtn" class="w-full pulse">Register</button>
+      </div>
+      <div id="registerMsg" class="msg"></div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

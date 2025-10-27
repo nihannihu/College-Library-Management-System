@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Page</title>
+</head>
+<body>
+    <h1>Debug Information</h1>
+    <div id="info"></div>
+    <button id="testBooks">Test Books API</button>
+    <button id="testLogin">Test Login API</button>
+    <div id="result"></div>
+
+    <script>
+        // Display current page information
+        document.getElementById('info').innerHTML = `
+            <p>Current Path: ${window.location.pathname}</p>
+            <p>Current Origin: ${window.location.origin}</p>
+            <p>API Base: ${window.location.origin}</p>
+        `;
+
+        // Test books API
+        document.getElementById('testBooks').addEventListener('click', async () => {
+            try {
+                document.getElementById('result').innerHTML = '<p>Testing books API...</p>';
+                const response = await fetch(`${window.location.origin}/api/books`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const books = await response.json();
+                document.getElementById('result').innerHTML = `
+                    <h2>Books API Test - Success!</h2>
+                    <p>Found ${books.length} books</p>
+                    <details>
+                        <summary>View Books Data</summary>
+                        <pre>${JSON.stringify(books.slice(0, 3), null, 2)}</pre>
+                    </details>
+                `;
+            } catch (error) {
+                document.getElementById('result').innerHTML = `
+                    <h2>Books API Test - Error</h2>
+                    <p>${error.message}</p>
+                    <details>
+                        <summary>Error Details</summary>
+                        <pre>${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}</pre>
+                    </details>
+                `;
+                console.error('Books API Error:', error);
+            }
+        });
+
+        // Test login API
+        document.getElementById('testLogin').addEventListener('click', async () => {
+            try {
+                document.getElementById('result').innerHTML = '<p>Testing login API...</p>';
+                const response = await fetch(`${window.location.origin}/api/auth/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: 'test@example.com',
+                        password: 'test123'
+                    })
+                });
+                const data = await response.json();
+                document.getElementById('result').innerHTML = `
+                    <h2>Login API Test - Response</h2>
+                    <p>Status: ${response.status}</p>
+                    <details>
+                        <summary>Response Data</summary>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    </details>
+                `;
+            } catch (error) {
+                document.getElementById('result').innerHTML = `
+                    <h2>Login API Test - Error</h2>
+                    <p>${error.message}</p>
+                    <details>
+                        <summary>Error Details</summary>
+                        <pre>${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}</pre>
+                    </details>
+                `;
+                console.error('Login API Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

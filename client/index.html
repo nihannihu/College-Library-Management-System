@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library - Member</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>College Library Management System</h1>
+    <nav>
+      <a href="admin.html">Admin Dashboard</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="login.html" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section>
+        <div class="toolbar">
+          <h2 style="margin-right:auto">📚 All Books</h2>
+          <input type="text" id="searchInput" placeholder="Search by title, author, ISBN">
+          <button id="searchBtn">🔍 Search</button>
+        </div>
+        <div id="books"></div>
+      </section>
+      <section>
+        <h2>📖 My Borrowed Books</h2>
+        <div id="myBooks"></div>
+      </section>
+      <section>
+        <h2>✨ Recommended For You</h2>
+        <div id="recs" class="muted">Borrow a book to see recommendations by genre</div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library - Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🏛️ College Library Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Member View</a>
+      <a href="login.html" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section>
+        <h2>📚 Add New Book</h2>
+        <div class="stack">
+          <input id="title" placeholder="📘 Book Title">
+          <input id="author" placeholder="✍️ Author Name">
+          <input id="isbn" placeholder="🔢 ISBN Number">
+          <input id="genre" placeholder="🏷️ Genre">
+          <input id="coverImage" placeholder="🖼️ Cover Image URL (optional)">
+          <textarea id="description" placeholder="📝 Description (optional)"></textarea>
+          <button id="addBookBtn">➕ Add Book</button>
+        </div>
+        <div id="addBookMsg" class="msg"></div>
+      </section>
+      <section>
+        <h2>📷 Scan ISBN</h2>
+        <div class="stack">
+          <button id="scanToggleBtn">📷 Start Scanner</button>
+        </div>
+        <div id="qrReader" style="display:none; max-width:480px"></div>
+        <div class="muted">💡 Tip: Point the camera at a book barcode (ISBN). Detected text will fill the Book ISBN field above.</div>
+      </section>
+      <section>
+        <h2>📤 Issue Book</h2>
+        <div class="stack">
+          <input id="issueIsbn" placeholder="🔢 Book ISBN">
+          <input id="issueEmail" placeholder="📧 Member Email">
+          <button id="issueBtn">📤 Issue</button>
+          <button id="seedBtn" title="Generate demo books">🌱 Seed Demo Books</button>
+        </div>
+        <div id="issueMsg" class="msg"></div>
+      </section>
+      <section>
+        <h2>📥 Return Book</h2>
+        <div class="stack">
+          <input id="returnIsbn" placeholder="🔢 Book ISBN">
+          <button id="returnBtn">📥 Return</button>
+        </div>
+        <div id="returnMsg" class="msg"></div>
+      </section>
+      <section>
+        <div class="toolbar">
+          <h2 style="margin-right:auto">👥 Pending User Registrations</h2>
+          <button id="refreshUsers">🔄 Refresh</button>
+        </div>
+        <div id="usersList"></div>
+      </section>
+      <section>
+        <div class="toolbar">
+          <h2 style="margin-right:auto">📖 Borrow Requests</h2>
+          <button id="refreshRequests">🔄 Refresh</button>
+        </div>
+        <div id="requestsList"></div>
+      </section>
+      <section>
+        <div class="toolbar">
+          <h2 style="margin-right:auto">📚 Borrowed Books</h2>
+          <button id="refreshBorrowed">🔄 Refresh</button>
+        </div>
+        <div id="borrowedList"></div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

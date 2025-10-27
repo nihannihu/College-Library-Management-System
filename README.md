@@ -1,0 +1,72 @@
+# Library Management System (MVP)
+
+A fast hackathon-ready LMS with:
+
+- Member portal: view/search books, see borrowed books and due dates.
+- Admin dashboard: add books, issue and return books.
+- JWT auth, role-based access, MongoDB via Mongoose.
+
+## Project Structure
+
+- server
+  - Express API, MongoDB models, routes, middleware
+- client
+  - Vanilla HTML/CSS/JS pages
+
+## Prerequisites
+
+- Node.js 18+
+- A MongoDB connection string (MongoDB Atlas recommended)
+
+## Quick Start
+
+1) Backend setup
+
+- Copy server/.env.example to server/.env and fill values
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=generate_a_strong_secret
+PORT=3000
+# Optional (auto-seed admin on first run)
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+ADMIN_USERNAME=admin
+```
+
+- Install and run server
+
+```
+# From the server folder
+npm install
+npm start
+```
+
+You should see "MongoDB connected" and the server listening on port 3000.
+
+2) Frontend
+
+- Open client/login.html in your browser. The app calls the API at http://localhost:3000.
+
+## Core API Endpoints
+
+- POST /api/auth/register
+- POST /api/auth/login
+- GET  /api/auth/me
+- GET  /api/books
+- POST /api/books              (admin)
+- PUT  /api/books/:id          (admin)
+- DELETE /api/books/:id        (admin)
+- POST /api/admin/issue        (admin)
+- POST /api/admin/return       (admin)
+- GET  /api/member/my-books    (member)
+
+## Basic Flows
+
+- Admin: login -> Add New Book -> Issue Book -> Return Book
+- Member: login -> See All Books -> My Borrowed Books with due dates
+
+## Notes
+
+- For demo, start by seeding an admin via env vars. Then create member accounts via POST /api/auth/register or add a simple register UI if needed.
+- CORS is enabled for local development.
