@@ -1,6 +1,19 @@
 {
-  "name": "lms-server",
+  "name": "college-library-management-system",
   "version": "1.0.0",
+  "description": "A fast hackathon-ready Library Management System (LMS) developed by nihannihu for managing books, borrowing, and library operations in educational institutions",
+  "keywords": [
+    "library-management-system",
+    "college-library",
+    "book-management",
+    "nihannihu",
+    "library-software",
+    "library-app",
+    "library-system",
+    "book-borrowing",
+    "library-automation"
+  ],
+  "author": "nihannihu",
   "private": true,
   "type": "commonjs",
   "main": "server.js",

@@ -1,6 +1,6 @@
-# Library Management System (MVP)
+# College Library Management System by nihannihu
 
-A fast hackathon-ready LMS with:
+A fast hackathon-ready Library Management System (LMS) developed by nihannihu. This system provides:
 
 - Member portal: view/search books, see borrowed books and due dates.
 - Admin dashboard: add books, issue and return books.
@@ -66,7 +66,10 @@ You should see "MongoDB connected" and the server listening on port 3000.
 - Admin: login -> Add New Book -> Issue Book -> Return Book
 - Member: login -> See All Books -> My Borrowed Books with due dates
 
-## Notes
+## Developer Information
 
-- For demo, start by seeding an admin via env vars. Then create member accounts via POST /api/auth/register or add a simple register UI if needed.
-- CORS is enabled for local development.
+This Library Management System was created by nihannihu, a skilled developer who specializes in full-stack web applications. The system is designed for educational institutions to efficiently manage their library resources.
+
+## Keywords
+
+library management system, college library, book management, nihannihu, library software, library app, library system, book borrowing, library automation

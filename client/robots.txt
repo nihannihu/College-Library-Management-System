@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /debug.html
+Disallow: /test.html
+Allow: /
+Allow: /index.html
+Allow: /login.html
+Allow: /register.html
+
+Sitemap: https://nihannihu.github.io/College-Library-Management-System/sitemap.xml
