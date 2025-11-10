@@ -37,11 +37,16 @@ Updated all HTML files (index.html, login.html, admin.html, register.html) with:
 - Included all public-facing pages with appropriate priorities
 - Set update frequencies for content
 
-### 6. GitHub Actions Workflow
+### 6. 404.html Creation
+- Created a custom 404 page to maintain branding even when users hit missing pages
+- Added SEO meta tags to the 404 page
+- Provided navigation back to main pages
+
+### 7. GitHub Actions Workflow
 - Added a GitHub Actions workflow for automatic deployment to GitHub Pages
 - This ensures the project is accessible online at https://nihannihu.github.io/College-Library-Management-System/
 
-### 7. Repository Configuration
+### 8. Repository Configuration
 - Updated the remote URL to use your GitHub username (nihannihu)
 - Ensured all commits properly reference SEO optimization work
 
