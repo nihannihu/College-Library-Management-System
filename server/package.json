@@ -1,22 +1,37 @@
 {
   "name": "college-library-management-system",
   "version": "1.0.0",
-  "description": "A fast hackathon-ready Library Management System (LMS) developed by nihannihu for managing books, borrowing, and library operations in educational institutions",
+  "description": "A fast hackathon-ready Library Management System (LMS) developed by Nihan Nihu (nihannihu | @nihannihuu | nihan-nihu) for managing books, borrowing, and library operations in educational institutions. Follow the developer on GitHub (nihannihu), Instagram (@nihannihuu), and LinkedIn (nihan-nihu) for more projects.",
   "keywords": [
+    "Nihan Nihu",
+    "nihannihu",
+    "@nihannihuu",
+    "nihan-nihu",
     "library-management-system",
     "college-library",
     "book-management",
-    "nihannihu",
     "library-software",
     "library-app",
     "library-system",
     "book-borrowing",
-    "library-automation"
+    "library-automation",
+    "full-stack-developer"
   ],
-  "author": "nihannihu",
+  "author": "Nihan Nihu (nihannihu)",
+  "contributors": [
+    "Nihan Nihu <https://github.com/nihannihu>"
+  ],
   "private": true,
   "type": "commonjs",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nihannihu/College-Library-Management-System.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nihannihu/College-Library-Management-System/issues"
+  },
+  "homepage": "https://nihannihu.github.io/College-Library-Management-System/",
   "scripts": {
     "start": "nodemon server.js"
   },

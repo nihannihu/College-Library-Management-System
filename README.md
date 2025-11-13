@@ -1,10 +1,18 @@
-# College Library Management System by nihannihu
+# College Library Management System by Nihan Nihu (nihannihu)
 
-A fast hackathon-ready Library Management System (LMS) developed by nihannihu. This system provides:
+A fast hackathon-ready Library Management System (LMS) developed by Nihan Nihu (GitHub: nihannihu | Instagram: @nihannihuu | LinkedIn: nihan-nihu). This system provides:
 
 - Member portal: view/search books, see borrowed books and due dates.
 - Admin dashboard: add books, issue and return books.
 - JWT auth, role-based access, MongoDB via Mongoose.
+
+## Find Me Online
+
+- **GitHub**: [nihannihu](https://github.com/nihannihu)
+- **Instagram**: [@nihannihuu](https://instagram.com/nihannihuu)
+- **LinkedIn**: [nihan-nihu](https://linkedin.com/in/nihan-nihu)
+
+Search for "Nihan Nihu" or "nihannihu" on Google to find all my profiles and projects.
 
 ## Project Structure
 
@@ -68,8 +76,13 @@ You should see "MongoDB connected" and the server listening on port 3000.
 
 ## Developer Information
 
-This Library Management System was created by nihannihu, a skilled developer who specializes in full-stack web applications. The system is designed for educational institutions to efficiently manage their library resources.
+This Library Management System was created by Nihan Nihu (nihannihu), a skilled developer who specializes in full-stack web applications. The system is designed for educational institutions to efficiently manage their library resources.
+
+Connect with me on social media:
+- Follow me on GitHub for code updates and new projects
+- Follow me on Instagram (@nihannihuu) for behind-the-scenes development content
+- Connect with me on LinkedIn (nihan-nihu) for professional networking
 
 ## Keywords
 
-library management system, college library, book management, nihannihu, library software, library app, library system, book borrowing, library automation
+Nihan Nihu, nihannihu, @nihannihuu, nihan-nihu, library management system, college library, book management, library software, library app, library system, book borrowing, library automation, full-stack developer
