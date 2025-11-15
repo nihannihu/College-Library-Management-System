@@ -6,10 +6,5 @@ Allow: /
 Allow: /index.html
 Allow: /login.html
 Allow: /register.html
-Allow: /404.html
 
 Sitemap: https://nihannihu.github.io/College-Library-Management-System/sitemap.xml
-
-# SEO optimization for Nihan Nihu (nihannihu)
-# Follow me on GitHub (nihannihu), Instagram (@nihannihuu), and LinkedIn (nihan-nihu)
-# Search for "Nihan Nihu" or "nihannihu" on Google to find all profiles
