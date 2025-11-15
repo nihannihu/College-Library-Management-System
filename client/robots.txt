@@ -7,4 +7,4 @@ Allow: /index.html
 Allow: /login.html
 Allow: /register.html
 
-Sitemap: https://nihannihu.github.io/College-Library-Management-System/sitemap.xml
+Sitemap: https://github.com/nihannihu/College-Library-Management-System/sitemap.xml
